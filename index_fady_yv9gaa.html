@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/logoFFF.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astraeus</title>
+    <style>
+
+        @import url(design.css);
+        body {
+            background-image: url(img/background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="navbar">
+                <header>
+
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="learn.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="index_fady_yv9gaa.html">Home</a></li>
+
+                        <li id="logo">
+                            <div class="title">
+                                  <img src="img/logoFFF.png" alt="logo"/>
+                                  <h3>Astraeus</h3>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+
+                </header>
+            </div>
+            <div class="quote">
+                <b><font size="+10">"Somewhere, something incredible is waiting to be known"</font></b>
+                <br /><br />
+                <i><font size="+3">~Sharon Begley</font></i>
+            </div>
+            <div class="arrow">
+                &#8681;
+            </div>
+            <div class="content">
+                <section id="about">
+                    
+                    <br /><br /><br /><br /><br /><br /><br />
+                    <h3>About The Website</h3>
+                    <br /><br /><br />
+                    <div class="para">
+                        <strong>Astraeus.com </strong>is your prime source to get all the latest news about space exploartion, innovation and astronomy.<br />
+                        Use this website to stay updated on the latest astronomy events or to learn something new about our fascinating universe!
+                    </div>
+                    <br /><br />
+                    <video autoplay muted>
+                        <source src="vid/universe.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br /><br />
+                    <div class="para">
+                        The name Astraeus comes from greek mythology.
+                        Astraeus was an astrological deity, god of the stars and planets.
+
+                    </div>
+                    <br />
+                    <figure>
+                        <img src="img/god.jpg" alt="Astraeus">
+                        <figcaption>
+                            
+                            Statue of the greek god Astraeus
+                        </figcaption>
+                    </figure>
+                    <br /><br />
+                </section>
+            </div>
+        </div>
+
+
+        <div class="foot" id="footer">
+                <footer>
+                    <ul>
+                        <li>Copyrights Fady DMK</li>
+                        <li>Email: fadi.damak@hotmail.fr</li>
+                        <li>UP - MIK</li>
+                    </ul>
+                </footer>
+        </div>
+
+    </div>
+
+<script>
+    //we will get the arrow element
+    const arrow = document.querySelector('.arrow');
+
+    //we add an event listener to it
+    arrow.addEventListener('click',(event) =>{
+        window.scrollBy(0, 700);
+        //on click the page will automatically jump to the About The Website Section
+    })
+</script>
+</body>
+
+
+
+
+</html>

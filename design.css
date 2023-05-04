@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    color: #d9e7ff;
+    margin:0;
+}
+
+/*StyleSheet for the homepage*/
+div.navbar > header > ul {
+    background-image: linear-gradient(to top, transparent, black 50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.navbar > header > ul>li {
+    float: right;
+}
+div.navbar > header > ul > li a{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding: 2vh 3vh;
+    text-decoration:none;
+}
+
+
+div.navbar > header > ul > li a:hover {
+        background-color: aliceblue;
+        background-image: linear-gradient(to top, transparent, black 50%) !important;
+     
+}
+
+
+
+#logo {
+    float: left !important;
+    /*fix the logo to the left*/
+}
+
+.title img{
+    float:left;
+    width:40px;
+    height: 40px;
+}
+
+
+.title h1 {
+    float:left;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    margin:auto;
+    
+}
+
+
+/*this is used to align the text to the center of the logo*/
+.title {
+    display: flex;
+    align-items: center;
+}
+
+div.quote{
+    text-align:center;
+    padding: 260px 0;
+}
+div.quote > b > font {
+        color: #ffff;
+}
+div.quote > i > font {
+        color: white;
+ }
+
+div.maintitle {
+    text-align: center;
+    padding: 15vh 0;
+}
+.arrow {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #000000;
+    font-size: 5vh;
+    border-radius: 50%;
+    background-color: #ffff;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: arrow 1.5s linear infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        top: 25%;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 1;
+    }
+}
+div.content {
+    background-image: linear-gradient(to bottom, transparent, black 15%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#about{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+}
+#about>h3{
+    color:whitesmoke;
+    font-size:5vh;
+}
+#about.para{
+    font-size:10vh;
+    width:100%;
+}
+    #about > figure > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 400px;
+    }
+
+    #about > video {
+        width: 100%;
+        height: 100vh;
+    }
+
+#page-container {
+    position: relative;
+}
+
+#content-wrap {
+    padding-bottom: 4.5rem; /* Footer height */
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem; /* Footer height */
+    clear:both;
+}
+
+
+div.foot > footer {
+    background-color: #080b2b;
+    text-align: center;
+}
+div.foot > footer > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 30px 70px;
+        overflow: hidden;
+}
+
+ div.foot > footer > ul > li {
+        display: inline;
+        color: ghostwhite;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+    }
+
+
+/*StyleSheet for the News page*/
+
+
+
+#news {
+    
+    width: 80%;
+    margin: auto auto;
+    display: grid;
+}
+#news>h1{
+    color:#FDE2F3;
+    font-size: 5vh;
+    text-align:center;
+}
+#news>p{
+    color:white;
+    font-size: 3vh;
+}
+#starship-img1 > img {
+    position: relative;
+    left: 0%;
+    width: 100%;
+}
+#starship-img1 > figcaption {
+    font-size: 2vh;
+    position: relative;
+    text-align: center;
+}
+
+
+
+/*Stylesheet for the events*/
+#event {
+    width: 80%;
+    margin: auto auto;
+    display: grid;
+}
+#event>h3{
+    color:#FDE2F3;
+    font-size: 5vh;
+    text-align:center;
+}
+#event>img{
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+#event>p{
+    text-align:center;
+}
+.timer{
+    display: flex;
+    position: relative;
+    text-align:center;
+}
+    .timer div {
+        flex-basis: 400px;
+    }
+        .timer div p {
+            font-size: 60px;
+            margin-bottom: 0;
+        }
+
+
+
+/*style sheet for the gallery*/
+.slider {
+    min-height: 30em;
+    height: 100vh;
+    background-image: url(Img/image1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    border: 5px solid #050717;
+}
+.slider *{
+    box-sizing: border-box;
+}
+.caption{
+    background: linear-gradient(rgba(0,0,0,0),#000);
+    position: absolute;
+    bottom: 5em;
+    left:0;
+    width:100%;
+    padding: 4em 1em 2em 1em;
+    text-align: center;
+
+}
+.caption h1{
+    margin: 0;
+    color: #ffff;
+}
+.caption p{
+    color: #79797e;
+}
+.arrow-left,.arrow-right{
+    color: #000;
+    background: #ffff;
+    position: absolute;
+    top:60%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.arrow-left:hover,.arrow-right:hover{
+    background:#0000;
+    color: #ffff;
+}
+
+.arrow-left{
+    left: 1em;
+}
+.arrow-right{
+    right: 1em;
+}
+
+/*class for javascript*/
+.image-fade{
+    animation: imgFade 0.5s ease-in-out ;  
+}
+@keyframes imgFade{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*Stylesheet for contact page*/
+#me {
+    float: right;
+    margin: 0 0 0 15px;
+    
+}
+#me:hover{
+    animation: rotate 0.5s linear ;
+}
+@keyframes rotate{
+    from 
+    {
+     transform:rotate(0deg);}
+    to {
+    transform:rotate(360deg);}
+}
+#about > p{
+    float:left;
+}
